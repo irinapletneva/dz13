@@ -29,7 +29,7 @@ class ShopRepositoryTest {
         shopRepository.add(product1);
         shopRepository.add(product2);
         shopRepository.add(product3);
-        Assertions.assertThrows(RuntimeException.class,
+        Assertions.assertThrows(NotFoundException.class,
                 () -> shopRepository.remove(5)
         );
     }
